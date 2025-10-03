@@ -14,18 +14,22 @@ public abstract class PokemonSuper {
 
 //    methods
 
-    public void eat() {
-        IO.print(getName() + " eats delicious ");
+    public void speak() {
+        IO.print(getName() + " is saying something: ");
     }
 
-    public void speak() {
-        IO.print(getName() + " speaks: ");
+    public void eat() {
+        IO.print(getName() + " eats a delicious ");
     }
 
     public void sleep() {
         IO.println(getName() + " goes to sleep");
         IO.println("zzz...zzz...");
         IO.println(getName() + " has woken up");
+    }
+
+    public void levelUp() {
+        IO.println(getName() + " levels up to level " + (getLevel() + 1) + "!");
     }
 
 //    getters & setters

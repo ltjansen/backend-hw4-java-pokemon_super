@@ -20,12 +20,9 @@ public class FirePokemon extends PokemonSuper {
     }
 
     public void flamePowerUp() {
-        IO.println(this.name + " gains increased flame power! New power level: " + (this.flamePower+=10));
+        IO.println(this.name + " increases flame power from level " + this.flamePower + " to level " + (this.flamePower+=10));
     }
 
-    public void levelUp() {
-        IO.println(this.name + " levels up to level " + ++this.level + "!");
-    }
 
 //    override-methods from super
 
@@ -38,7 +35,7 @@ public class FirePokemon extends PokemonSuper {
     @Override
     public void eat() {
         super.eat();
-        IO.println("fire crackers");
+        IO.println("fire cracker");
     }
 
 //    getters & setters
