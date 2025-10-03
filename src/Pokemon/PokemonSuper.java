@@ -1,6 +1,6 @@
 package Pokemon;
 
-public class PokemonSuper {
+public abstract class PokemonSuper {
     String name;
     int level;
 
@@ -15,17 +15,17 @@ public class PokemonSuper {
 //    methods
 
     public void eat() {
-        IO.print("The Pokemon eats: ");
+        IO.print(getName() + " eats delicious ");
     }
 
     public void speak() {
-        IO.print("The Pokemon speaks: ");
+        IO.print(getName() + " speaks: ");
     }
 
     public void sleep() {
-        IO.println("The Pokemon goes to sleep");
-        IO.println("...");
-        IO.println("The Pokemon has woken up");
+        IO.println(getName() + " goes to sleep");
+        IO.println("zzz...zzz...");
+        IO.println(getName() + " has woken up");
     }
 
 //    getters & setters

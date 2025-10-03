@@ -16,13 +16,15 @@ public class FirePokemon extends PokemonSuper {
 //    methods
 
     public void attack() {
-        IO.println("FirePokemon attacks");
+        IO.println(this.name + " attacks for " + this.flamePower + " damage!");
     }
 
     public void flamePowerUp() {
-        IO.println("FirePokemon increases flame power");
-//        niet zeker of dit gaat werken met de ++
-        IO.println("New flame power: " + this.flamePower++);
+        IO.println(this.name + " gains increased flame power! New power level: " + (this.flamePower+=10));
+    }
+
+    public void levelUp() {
+        IO.println(this.name + " levels up to level " + ++this.level + "!");
     }
 
 //    override-methods from super
@@ -30,7 +32,7 @@ public class FirePokemon extends PokemonSuper {
     @Override
     public void speak() {
         super.speak();
-        IO.println("- hissing fire-");
+        IO.println("-unintelligible noise-");
     }
 
     @Override
