@@ -12,7 +12,7 @@ void main() {
 
 //    menu (uitzetten bij experimenteren met losse opdrachten)
     Scanner scanner = new Scanner(System.in);
-    IO.println("Please choose your Pokemon:");
+    IO.println("Choose your Pokemon:");
     IO.println("  1 - Charizard     (fire)");
     IO.println("  2 - Blastoise     (water)");
     IO.println("  3 - Venusaur      (grass)");

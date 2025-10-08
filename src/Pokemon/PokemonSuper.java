@@ -14,6 +14,8 @@ public abstract class PokemonSuper {
 
 //    methods
 
+    public abstract void attack();
+
     public void speak() {
         IO.print(getName() + " is saying something: ");
     }
